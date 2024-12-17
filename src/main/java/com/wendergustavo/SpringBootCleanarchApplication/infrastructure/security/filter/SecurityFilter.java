@@ -1,7 +1,8 @@
-package com.wendergustavo.SpringBootCleanarchApplication.infrastructure.security;
+package com.wendergustavo.SpringBootCleanarchApplication.infrastructure.security.filter;
 
 import com.wendergustavo.SpringBootCleanarchApplication.application.interfaces.UserGateway;
 import com.wendergustavo.SpringBootCleanarchApplication.domain.entity.User;
+import com.wendergustavo.SpringBootCleanarchApplication.infrastructure.security.TokenService;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;

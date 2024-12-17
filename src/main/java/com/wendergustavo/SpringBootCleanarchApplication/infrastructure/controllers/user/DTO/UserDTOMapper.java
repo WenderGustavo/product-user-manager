@@ -1,9 +1,9 @@
 package com.wendergustavo.SpringBootCleanarchApplication.infrastructure.controllers.user.DTO;
 
 import com.wendergustavo.SpringBootCleanarchApplication.domain.entity.User;
-import com.wendergustavo.SpringBootCleanarchApplication.infrastructure.controllers.user.CreateUserRequest;
-import com.wendergustavo.SpringBootCleanarchApplication.infrastructure.controllers.user.CreateUserResponse;
-import com.wendergustavo.SpringBootCleanarchApplication.infrastructure.persistence.user.UserRoles;
+import com.wendergustavo.SpringBootCleanarchApplication.infrastructure.controllers.user.controllers.CreateUserRequest;
+import com.wendergustavo.SpringBootCleanarchApplication.infrastructure.controllers.user.controllers.CreateUserResponse;
+import com.wendergustavo.SpringBootCleanarchApplication.infrastructure.repository.user.UserRoles;
 
 public class UserDTOMapper {
 

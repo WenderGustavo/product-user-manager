@@ -1,11 +1,11 @@
-package com.wendergustavo.SpringBootCleanarchApplication.main;
+package com.wendergustavo.SpringBootCleanarchApplication.config;
 
 import com.wendergustavo.SpringBootCleanarchApplication.application.interfaces.ProductGateway;
 import com.wendergustavo.SpringBootCleanarchApplication.application.usecases.ProductInteractor;
 import com.wendergustavo.SpringBootCleanarchApplication.infrastructure.controllers.product.DTO.ProductDTOMapper;
-import com.wendergustavo.SpringBootCleanarchApplication.infrastructure.gateways.ProductEntityMapper;
-import com.wendergustavo.SpringBootCleanarchApplication.infrastructure.gateways.ProductRepositoryGateway;
-import com.wendergustavo.SpringBootCleanarchApplication.infrastructure.persistence.product.ProductRepository;
+import com.wendergustavo.SpringBootCleanarchApplication.infrastructure.gateways.mapper.ProductEntityMapper;
+import com.wendergustavo.SpringBootCleanarchApplication.infrastructure.gateways.impl.ProductRepositoryGateway;
+import com.wendergustavo.SpringBootCleanarchApplication.infrastructure.repository.product.ProductRepository;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 

@@ -1,11 +1,11 @@
-    package com.wendergustavo.SpringBootCleanarchApplication.infrastructure.gateways;
+    package com.wendergustavo.SpringBootCleanarchApplication.infrastructure.gateways.mapper;
 
     import com.wendergustavo.SpringBootCleanarchApplication.domain.entity.Product;
-    import com.wendergustavo.SpringBootCleanarchApplication.infrastructure.persistence.product.ProductEntity;
+    import com.wendergustavo.SpringBootCleanarchApplication.infrastructure.repository.product.ProductEntity;
 
     public class ProductEntityMapper {
 
-        ProductEntity toEntity(Product productDomainObj) {
+       public ProductEntity toEntity(Product productDomainObj) {
             return new ProductEntity(
                     productDomainObj.id(),
                     productDomainObj.name(),

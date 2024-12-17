@@ -1,9 +1,10 @@
-package com.wendergustavo.SpringBootCleanarchApplication.infrastructure.gateways;
+package com.wendergustavo.SpringBootCleanarchApplication.infrastructure.gateways.impl;
 
 import com.wendergustavo.SpringBootCleanarchApplication.application.interfaces.UserGateway;
 import com.wendergustavo.SpringBootCleanarchApplication.domain.entity.User;
-import com.wendergustavo.SpringBootCleanarchApplication.infrastructure.persistence.user.UserEntity;
-import com.wendergustavo.SpringBootCleanarchApplication.infrastructure.persistence.user.UserRepository;
+import com.wendergustavo.SpringBootCleanarchApplication.infrastructure.gateways.mapper.UserEntityMapper;
+import com.wendergustavo.SpringBootCleanarchApplication.infrastructure.repository.user.UserEntity;
+import com.wendergustavo.SpringBootCleanarchApplication.infrastructure.repository.user.UserRepository;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;

@@ -1,9 +1,11 @@
 package com.wendergustavo.SpringBootCleanarchApplication.infrastructure.gateways;
 
 import com.wendergustavo.SpringBootCleanarchApplication.domain.entity.User;
-import com.wendergustavo.SpringBootCleanarchApplication.infrastructure.persistence.user.UserEntity;
-import com.wendergustavo.SpringBootCleanarchApplication.infrastructure.persistence.user.UserRepository;
-import com.wendergustavo.SpringBootCleanarchApplication.infrastructure.persistence.user.UserRoles;
+import com.wendergustavo.SpringBootCleanarchApplication.infrastructure.gateways.impl.UserRepositoryGateway;
+import com.wendergustavo.SpringBootCleanarchApplication.infrastructure.gateways.mapper.UserEntityMapper;
+import com.wendergustavo.SpringBootCleanarchApplication.infrastructure.repository.user.UserEntity;
+import com.wendergustavo.SpringBootCleanarchApplication.infrastructure.repository.user.UserRepository;
+import com.wendergustavo.SpringBootCleanarchApplication.infrastructure.repository.user.UserRoles;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;

@@ -1,11 +1,11 @@
-package com.wendergustavo.SpringBootCleanarchApplication.infrastructure.controllers.user;
+package com.wendergustavo.SpringBootCleanarchApplication.infrastructure.controllers.user.controllers;
 
 import com.wendergustavo.SpringBootCleanarchApplication.application.usecases.UserInteractor;
 import com.wendergustavo.SpringBootCleanarchApplication.domain.entity.User;
 import com.wendergustavo.SpringBootCleanarchApplication.exceptions.UserNotFoundException;
 import com.wendergustavo.SpringBootCleanarchApplication.infrastructure.controllers.user.DTO.UserDTO;
 import com.wendergustavo.SpringBootCleanarchApplication.infrastructure.controllers.user.DTO.UserDTOMapper;
-import com.wendergustavo.SpringBootCleanarchApplication.infrastructure.persistence.user.UserRoles;
+import com.wendergustavo.SpringBootCleanarchApplication.infrastructure.repository.user.UserRoles;
 import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

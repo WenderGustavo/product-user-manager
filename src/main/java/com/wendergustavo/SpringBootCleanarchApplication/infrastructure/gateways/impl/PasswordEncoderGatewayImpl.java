@@ -1,4 +1,4 @@
-package com.wendergustavo.SpringBootCleanarchApplication.infrastructure.gateways;
+package com.wendergustavo.SpringBootCleanarchApplication.infrastructure.gateways.impl;
 
 import com.wendergustavo.SpringBootCleanarchApplication.application.interfaces.PasswordEncoderGateway;
 import org.springframework.security.crypto.password.PasswordEncoder;

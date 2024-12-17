@@ -1,4 +1,4 @@
-package com.wendergustavo.SpringBootCleanarchApplication.infrastructure.persistence.user;
+package com.wendergustavo.SpringBootCleanarchApplication.infrastructure.repository.user;
 
 import jakarta.persistence.*;
 import org.springframework.security.core.GrantedAuthority;

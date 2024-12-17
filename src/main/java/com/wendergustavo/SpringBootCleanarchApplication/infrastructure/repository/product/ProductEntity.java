@@ -1,4 +1,4 @@
-package com.wendergustavo.SpringBootCleanarchApplication.infrastructure.persistence.product;
+package com.wendergustavo.SpringBootCleanarchApplication.infrastructure.repository.product;
 
 import jakarta.persistence.*;
 

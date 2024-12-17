@@ -3,6 +3,9 @@ package com.wendergustavo.SpringBootCleanarchApplication.infrastructure.controll
 import com.wendergustavo.SpringBootCleanarchApplication.application.usecases.ProductInteractor;
 import com.wendergustavo.SpringBootCleanarchApplication.domain.entity.Product;
 import com.wendergustavo.SpringBootCleanarchApplication.infrastructure.controllers.product.DTO.ProductDTOMapper;
+import com.wendergustavo.SpringBootCleanarchApplication.infrastructure.controllers.product.controllers.CreateProductRequest;
+import com.wendergustavo.SpringBootCleanarchApplication.infrastructure.controllers.product.controllers.CreateProductResponse;
+import com.wendergustavo.SpringBootCleanarchApplication.infrastructure.controllers.product.controllers.ProductController;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;

@@ -1,8 +1,7 @@
-package com.wendergustavo.SpringBootCleanarchApplication.infrastructure.gateways;
+package com.wendergustavo.SpringBootCleanarchApplication.infrastructure.gateways.mapper;
 
 import com.wendergustavo.SpringBootCleanarchApplication.domain.entity.User;
-import com.wendergustavo.SpringBootCleanarchApplication.infrastructure.persistence.user.UserEntity;
-import com.wendergustavo.SpringBootCleanarchApplication.infrastructure.persistence.user.UserRoles;
+import com.wendergustavo.SpringBootCleanarchApplication.infrastructure.repository.user.UserEntity;
 
 public class UserEntityMapper {
 

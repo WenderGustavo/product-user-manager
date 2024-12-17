@@ -1,13 +1,12 @@
-package com.wendergustavo.SpringBootCleanarchApplication.infrastructure.controllers.user;
+package com.wendergustavo.SpringBootCleanarchApplication.infrastructure.controllers.user.controllers;
 
 import com.wendergustavo.SpringBootCleanarchApplication.application.usecases.UserRegistrationService;
 import com.wendergustavo.SpringBootCleanarchApplication.infrastructure.controllers.user.DTO.*;
-import com.wendergustavo.SpringBootCleanarchApplication.infrastructure.persistence.user.UserRoles;
+import com.wendergustavo.SpringBootCleanarchApplication.infrastructure.repository.user.UserRoles;
 import com.wendergustavo.SpringBootCleanarchApplication.infrastructure.security.TokenService;
 import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;

@@ -1,5 +1,6 @@
 package com.wendergustavo.SpringBootCleanarchApplication.infrastructure.security;
 
+import com.wendergustavo.SpringBootCleanarchApplication.infrastructure.security.filter.SecurityFilter;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;

@@ -2,6 +2,7 @@ package com.wendergustavo.SpringBootCleanarchApplication.infrastructure.controll
 
 import com.wendergustavo.SpringBootCleanarchApplication.infrastructure.controllers.user.DTO.AuthenticationDTO;
 import com.wendergustavo.SpringBootCleanarchApplication.infrastructure.controllers.user.DTO.LoginResponseDTO;
+import com.wendergustavo.SpringBootCleanarchApplication.infrastructure.controllers.user.controllers.AuthenticationController;
 import com.wendergustavo.SpringBootCleanarchApplication.infrastructure.security.TokenService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;

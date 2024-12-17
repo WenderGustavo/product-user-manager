@@ -1,9 +1,9 @@
 package com.wendergustavo.SpringBootCleanarchApplication.infrastructure.controllers.product.DTO;
 
 import com.wendergustavo.SpringBootCleanarchApplication.domain.entity.Product;
-import com.wendergustavo.SpringBootCleanarchApplication.infrastructure.controllers.product.CreateProductRequest;
-import com.wendergustavo.SpringBootCleanarchApplication.infrastructure.controllers.product.CreateProductResponse;
-import com.wendergustavo.SpringBootCleanarchApplication.infrastructure.controllers.product.UpdateProductRequest;
+import com.wendergustavo.SpringBootCleanarchApplication.infrastructure.controllers.product.controllers.CreateProductRequest;
+import com.wendergustavo.SpringBootCleanarchApplication.infrastructure.controllers.product.controllers.CreateProductResponse;
+import com.wendergustavo.SpringBootCleanarchApplication.infrastructure.controllers.product.controllers.UpdateProductRequest;
 import org.springframework.stereotype.Component;
 
 @Component
