@@ -105,19 +105,33 @@ http://localhost:8080/swagger-ui/index.html
 1. **Registrar um Usuário**:
    - No Swagger, vá até o endpoint `POST /auth/register`.
    - Clique em **Try it out**.
-   - Preencha os campos do corpo da requisição (`username`, `password`, `email` e `role`).
-   - Clique em **Execute** para registrar o usuário. Certifique-se de registrar um usuário com o papel `ADMIN` para acessar outros endpoints protegidos.
+   - Preencha os campos do corpo da requisição no seguinte formato JSON:
+   ```json
+   {
+     "username": "admin_user",
+     "password": "password123",
+     "email": "admin@example.com",
+     "role": "ADMIN"
+   }
+   ```
+   - Clique em **Execute** para registrar o usuário.
 
 2. **Fazer Login**:
    - No Swagger, vá até o endpoint `POST /auth/login`.
    - Clique em **Try it out**.
-   - Preencha os campos `username` e `password` com as credenciais do usuário registrado.
+   - Preencha os campos `username` e `password` no seguinte formato JSON:
+   ```json
+   {
+     "username": "admin_user",
+     "password": "password123"
+   }
+   ```
    - Clique em **Execute** e copie o valor do campo `accessToken` retornado na resposta.
 
 3. **Autenticar no Swagger**:
    - No canto superior direito da interface do Swagger, clique em **Authorize**.
    - Insira o token JWT no formato `Bearer <seu_token_jwt>`.
-   - Clique em **Authorize** para autenticar. Isso permitirá o acesso aos endpoints protegidos.
+   - Clique em **Authorize** para autenticar.
 
 4. **Testar os Endpoints**:
    - Após autenticar, vá até o endpoint desejado, clique em **Try it out** e execute as requisições. Por exemplo:
@@ -139,12 +153,28 @@ Os exemplos abaixo são diretamente testáveis pelo Swagger após seguir o passo
 - No Swagger, clique no endpoint `GET /users`, clique em **Try it out** e depois em **Execute**.
 
 #### **POST /users** - Cria um novo usuário
-- No Swagger, vá até `POST /users`, clique em **Try it out**, preencha os campos necessários e clique em **Execute**.
+- No Swagger, vá até `POST /users`, clique em **Try it out**, preencha os campos no seguinte formato JSON:
+  ```json
+  {
+    "username": "new_user",
+    "password": "password123",
+    "email": "new_user@example.com",
+    "role": "USER"
+  }
+  ```
+  - Clique em **Execute**.
 
 #### **PUT /users/{id}** - Atualiza um usuário existente
 - No Swagger, selecione o endpoint `PUT /users/{id}`.
-- Clique em **Try it out**, insira o `id` do usuário na URL e os dados no corpo da requisição.
-- Clique em **Execute** para atualizar.
+- Clique em **Try it out**, insira o `id` do usuário na URL e preencha os campos no seguinte formato JSON:
+  ```json
+  {
+    "username": "updated_user",
+    "email": "updated_user@example.com",
+    "role": "ADMIN"
+  }
+  ```
+  - Clique em **Execute**.
 
 #### **DELETE /users/{id}** - Remove um usuário
 - Vá até o endpoint `DELETE /users/{id}`, clique em **Try it out**, insira o `id` do usuário e clique em **Execute**.
@@ -153,11 +183,24 @@ Os exemplos abaixo são diretamente testáveis pelo Swagger após seguir o passo
 - Clique em `GET /products`, clique em **Try it out** e depois em **Execute**.
 
 #### **POST /products** - Cria um novo produto
-- Vá até `POST /products`, clique em **Try it out**, preencha os campos `name` e `price` e clique em **Execute**.
+- Vá até `POST /products`, clique em **Try it out**, preencha os campos no seguinte formato JSON:
+  ```json
+  {
+    "name": "Produto A",
+    "price": 99.99
+  }
+  ```
+  - Clique em **Execute**.
 
 #### **PUT /products/{id}** - Atualiza um produto existente
-- Selecione o endpoint `PUT /products/{id}`, clique em **Try it out**, insira o `id` do produto e os novos dados no corpo.
-- Clique em **Execute**.
+- Selecione o endpoint `PUT /products/{id}`, clique em **Try it out**, insira o `id` do produto e preencha os campos no seguinte formato JSON:
+  ```json
+  {
+    "name": "Produto B",
+    "price": 89.99
+  }
+  ```
+  - Clique em **Execute**.
 
 #### **DELETE /products/{id}** - Remove um produto
 - Vá até o endpoint `DELETE /products/{id}`, clique em **Try it out**, insira o `id` do produto e clique em **Execute**.
