@@ -4,15 +4,15 @@
 Este é um projeto de backend desenvolvido utilizando **Spring Boot** e **Java 21**. O sistema implementa recursos modernos como autenticação com **Spring Security**, **Docker** para conteinerização, banco de dados **PostgreSQL** com migrações gerenciadas pelo **Flyway**, além de testes unitários e um padrão de arquitetura bem estruturado seguindo a **Clean Architecture**.
 
 ## Tecnologias Utilizadas
-- **Java 21**: Versão mais recente do Java.
-- **Spring Boot**: Framework para desenvolvimento rápido de aplicações Java.
-- **Spring Security**: Implementação de segurança para controle de acesso e JWT.
-- **Docker**: Facilita a conteinerização da aplicação.
-- **PostgreSQL**: Banco de dados relacional.
-- **Flyway**: Gerenciamento de migrações do banco de dados.
-- **JUnit**: Testes unitários.
-- **Logger (SLF4J)**: Geração de logs para monitoração e depuração.
-- **Swagger**: Documentação interativa dos endpoints REST.
+- [**Java 21**](https://openjdk.org/projects/jdk/21/): Versão mais recente do Java.
+- [**Spring Boot**](https://spring.io/projects/spring-boot): Framework para desenvolvimento rápido de aplicações Java.
+- [**Spring Security**](https://spring.io/projects/spring-security): Implementação de segurança para controle de acesso e JWT.
+- [**Docker**](https://www.docker.com/): Facilita a conteinerização da aplicação.
+- [**PostgreSQL**](https://www.postgresql.org/): Banco de dados relacional.
+- [**Flyway**](https://flywaydb.org/): Gerenciamento de migrações do banco de dados.
+- [**JUnit**](https://junit.org/junit5/): Testes unitários.
+- [**Logger (SLF4J)**](http://www.slf4j.org/): Geração de logs para monitoração e depuração.
+- [**Swagger**](https://swagger.io/): Documentação interativa dos endpoints REST.
 
 ---
 
@@ -171,4 +171,4 @@ src/
 
 ## Autor
 - **Wender Gustavo**  
-  LinkedIn: www.linkedin.com/in/wender-gustavo-110343230  
+  LinkedIn: [www.linkedin.com/in/wender-gustavo-110343230](https://www.linkedin.com/in/wender-gustavo-110343230/)
