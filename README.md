@@ -138,11 +138,7 @@ http://localhost:8080/swagger-ui/index.html
      - `GET /users` para listar usuários.
      - `POST /products` para criar um produto.
 
-### 7. Testes Unitários
-Para executar os testes unitários:
-```bash
-./mvnw test
-```
+
 
 ---
 
@@ -206,6 +202,12 @@ Os exemplos abaixo são diretamente testáveis pelo Swagger após seguir o passo
 - Vá até o endpoint `DELETE /products/{id}`, clique em **Try it out**, insira o `id` do produto e clique em **Execute**.
 
 ---
+
+### 7. Testes Unitários
+Para executar os testes unitários:
+```bash
+./mvnw test
+```
 
 ## Logs
 Os logs são gerados na pasta `/logs`, separados por nível de log (INFO, DEBUG, ERROR).
