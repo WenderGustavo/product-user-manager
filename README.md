@@ -103,22 +103,26 @@ http://localhost:8080/swagger-ui/index.html
 
 ### 6. Passo a Passo para Testar pelo Swagger
 1. **Registrar um Usuário**:
-   - Acesse o endpoint `POST /auth/register`.
-   - Insira os dados do usuário, como `username`, `password`, `email` e `role`.
-   - O usuário ADMIN deve ser registrado primeiro para acessar outros endpoints.
+   - No Swagger, vá até o endpoint `POST /auth/register`.
+   - Clique em **Try it out**.
+   - Preencha os campos do corpo da requisição (`username`, `password`, `email` e `role`).
+   - Clique em **Execute** para registrar o usuário. Certifique-se de registrar um usuário com o papel `ADMIN` para acessar outros endpoints protegidos.
 
 2. **Fazer Login**:
-   - Acesse o endpoint `POST /auth/login`.
-   - Insira o `username` e `password` do usuário registrado.
-   - Copie o token JWT retornado no campo `accessToken` da resposta.
+   - No Swagger, vá até o endpoint `POST /auth/login`.
+   - Clique em **Try it out**.
+   - Preencha os campos `username` e `password` com as credenciais do usuário registrado.
+   - Clique em **Execute** e copie o valor do campo `accessToken` retornado na resposta.
 
-3. **Inserir o Token no Swagger**:
-   - Clique no botão **Authorize** no canto superior direito.
-   - Insira o token JWT no formato: `Bearer <seu_token_jwt>`.
-   - Clique em **Authorize** para autenticar.
+3. **Autenticar no Swagger**:
+   - No canto superior direito da interface do Swagger, clique em **Authorize**.
+   - Insira o token JWT no formato `Bearer <seu_token_jwt>`.
+   - Clique em **Authorize** para autenticar. Isso permitirá o acesso aos endpoints protegidos.
 
 4. **Testar os Endpoints**:
-   - Após autenticar, todos os endpoints protegidos estarão disponíveis para teste diretamente no Swagger.
+   - Após autenticar, vá até o endpoint desejado, clique em **Try it out** e execute as requisições. Por exemplo:
+     - `GET /users` para listar usuários.
+     - `POST /products` para criar um produto.
 
 ### 7. Testes Unitários
 Para executar os testes unitários:
@@ -128,6 +132,37 @@ Para executar os testes unitários:
 
 ---
 
+## Endpoints Principais
+Os exemplos abaixo são diretamente testáveis pelo Swagger após seguir o passo a passo acima.
+
+#### **GET /users** - Lista todos os usuários
+- No Swagger, clique no endpoint `GET /users`, clique em **Try it out** e depois em **Execute**.
+
+#### **POST /users** - Cria um novo usuário
+- No Swagger, vá até `POST /users`, clique em **Try it out**, preencha os campos necessários e clique em **Execute**.
+
+#### **PUT /users/{id}** - Atualiza um usuário existente
+- No Swagger, selecione o endpoint `PUT /users/{id}`.
+- Clique em **Try it out**, insira o `id` do usuário na URL e os dados no corpo da requisição.
+- Clique em **Execute** para atualizar.
+
+#### **DELETE /users/{id}** - Remove um usuário
+- Vá até o endpoint `DELETE /users/{id}`, clique em **Try it out**, insira o `id` do usuário e clique em **Execute**.
+
+#### **GET /products** - Lista todos os produtos
+- Clique em `GET /products`, clique em **Try it out** e depois em **Execute**.
+
+#### **POST /products** - Cria um novo produto
+- Vá até `POST /products`, clique em **Try it out**, preencha os campos `name` e `price` e clique em **Execute**.
+
+#### **PUT /products/{id}** - Atualiza um produto existente
+- Selecione o endpoint `PUT /products/{id}`, clique em **Try it out**, insira o `id` do produto e os novos dados no corpo.
+- Clique em **Execute**.
+
+#### **DELETE /products/{id}** - Remove um produto
+- Vá até o endpoint `DELETE /products/{id}`, clique em **Try it out**, insira o `id` do produto e clique em **Execute**.
+
+---
 
 ## Logs
 Os logs são gerados na pasta `/logs`, separados por nível de log (INFO, DEBUG, ERROR).
