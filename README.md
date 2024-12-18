@@ -101,7 +101,26 @@ A documentação estará disponível em:
 http://localhost:8080/swagger-ui/index.html
 ```
 
-### 6. Testes Unitários
+### 6. Passo a Passo para Testar pelo Swagger
+1. **Registrar um Usuário**:
+   - Acesse o endpoint `POST /auth/register`.
+   - Insira os dados do usuário, como `username`, `password`, `email` e `role`.
+   - O usuário ADMIN deve ser registrado primeiro para acessar outros endpoints.
+
+2. **Fazer Login**:
+   - Acesse o endpoint `POST /auth/login`.
+   - Insira o `username` e `password` do usuário registrado.
+   - Copie o token JWT retornado no campo `accessToken` da resposta.
+
+3. **Inserir o Token no Swagger**:
+   - Clique no botão **Authorize** no canto superior direito.
+   - Insira o token JWT no formato: `Bearer <seu_token_jwt>`.
+   - Clique em **Authorize** para autenticar.
+
+4. **Testar os Endpoints**:
+   - Após autenticar, todos os endpoints protegidos estarão disponíveis para teste diretamente no Swagger.
+
+### 7. Testes Unitários
 Para executar os testes unitários:
 ```bash
 ./mvnw test
