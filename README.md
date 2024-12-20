@@ -21,8 +21,6 @@ Este é um projeto de backend utilizando **Spring Boot** e **Java 21**, implemen
 8. [Estrutura do Projeto](#estrutura-do-projeto)
 9. [Autor](#autor)
 
----
-
 ## 🛠 Sobre
 
 Este projeto implementa um sistema de gerenciamento de usuários e produtos com controle de acesso baseado em roles (ADMIN e USER), utilizando JWT para autenticação e autorização.
