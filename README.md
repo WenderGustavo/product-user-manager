@@ -1,115 +1,160 @@
-# Product and User Manager
+Product and User Manager
 
-![Java](https://img.shields.io/badge/Java-21-blue)
-![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.0-green)
-![PostgreSQL](https://img.shields.io/badge/Database-PostgreSQL-lightblue)
-![Docker](https://img.shields.io/badge/Container-Docker-2496ED)
-![License](https://img.shields.io/badge/License-MIT-yellow)
 
-Este é um projeto de backend utilizando **Spring Boot** e **Java 21**, implementando autenticação com **Spring Security**, **Docker** para conteinerização, banco de dados **PostgreSQL** com migrações gerenciadas pelo **Flyway** e testes unitários. A arquitetura segue o padrão **Clean Architecture**.
 
----
+Um sistema backend robusto desenvolvido com Spring Boot e Java 21, utilizando autenticação e autorização com Spring Security. Inclui conteinerização com Docker, banco de dados PostgreSQL gerenciado por Flyway e uma abordagem de arquitetura modular seguindo os princípios da Clean Architecture.
 
-## 📑 Tabela de Conteúdo
-1. [Sobre](#sobre)
-2. [Tecnologias Utilizadas](#tecnologias-utilizadas)
-3. [Funcionalidades](#funcionalidades)
-4. [Clean Architecture](#clean-architecture)
-5. [Como Executar](#como-executar)
-6. [Endpoints Principais](#endpoints-principais)
-7. [Testes Unitários](#testes-unitários)
-8. [Estrutura do Projeto](#estrutura-do-projeto)
-9. [Autor](#autor)
+📚 Tabela de Conteúdo
 
-## 🛠 Sobre
+Sobre
 
-Este projeto implementa um sistema de gerenciamento de usuários e produtos com controle de acesso baseado em roles (ADMIN e USER), utilizando JWT para autenticação e autorização.
+Tecnologias Utilizadas
 
-### Funcionalidades Principais:
+Funcionalidades
 
-#### Para ADMIN:
-- Criar, atualizar e excluir usuários.
-- Alterar roles de outros usuários.
-- Gerenciar produtos (criar, atualizar e excluir).
+Clean Architecture
 
-#### Para USER:
-- Apenas visualizar produtos.
+Como Executar
 
-### Segurança:
-- Autenticação via JWT, com tokens enviados no cabeçalho das requisições.
-- Controle de permissões baseado em roles, gerenciado pelo Spring Security.
+Endpoints Principais
 
----
+Testes Unitários
 
-## 🚀 Tecnologias Utilizadas
+Estrutura do Projeto
 
-- **[Java 21](https://openjdk.org/projects/jdk/21/)**: Versão mais recente do Java.
-- **[Spring Boot](https://spring.io/projects/spring-boot)**: Framework para desenvolvimento ágil.
-- **[Spring Security](https://spring.io/projects/spring-security)**: Gerenciamento de autenticação e autorização.
-- **[PostgreSQL](https://www.postgresql.org/)**: Banco de dados relacional.
-- **[Flyway](https://flywaydb.org/)**: Migração e versionamento do banco.
-- **[Docker](https://www.docker.com/)**: Conteinerização para ambientes consistentes.
-- **[JUnit](https://junit.org/junit5/)**: Testes unitários para maior confiabilidade.
-- **[Swagger](https://swagger.io/)**: Documentação interativa de APIs.
+Autor
 
----
+⚖️ Sobre
 
-## 📂 Clean Architecture
+Este projeto é um sistema de gerenciamento de usuários e produtos com autenticação e autorização baseadas em roles (ADMIN e USER), utilizando JWT. Foi desenvolvido com foco em escalabilidade, modularidade e segurança.
 
-O projeto segue os princípios da **Clean Architecture**, garantindo modularidade e manutenibilidade.
+Principais Características:
 
-### Estrutura:
+ADMIN:
 
-1. **Domain**: Entidades e regras de negócio.
-2. **Application**: Lógica de aplicação (use cases e interfaces).
-3. **Infrastructure**: Integrações externas (controllers, gateways, repos).
-4. **Configurações e Exceções**: Configuração de segurança, OpenAPI e tratativas de erro.
+Criar, atualizar e excluir usuários.
 
----
+Alterar roles de outros usuários.
 
-## 🏗️ Como Executar
+Gerenciar produtos (criar, atualizar e excluir).
 
-### 1. Clonar o Repositório
+USER:
 
-```bash
+Visualização de produtos.
+
+Segurança:
+
+Autenticação: Realizada via JWT, com tokens incluídos no cabeçalho das requisições.
+
+Autorização: Controle de acessos baseado em roles, gerenciado pelo Spring Security.
+
+🚀 Tecnologias Utilizadas
+
+Java 21: Versão mais recente do Java, com recursos aprimorados de desempenho e segurança.
+
+Spring Boot: Framework para desenvolvimento ágil e eficiente.
+
+Spring Security: Gerenciamento completo de autenticação e autorização.
+
+PostgreSQL: Banco de dados relacional de alta performance.
+
+Flyway: Migração e versionamento do banco de dados.
+
+Docker: Ferramenta para conteinerização e padronização de ambientes.
+
+JUnit 5: Framework para testes unitários.
+
+Swagger: Documentação interativa para APIs REST.
+
+🔧 Funcionalidades
+
+Usuários:
+
+ADMIN: Gerencia todos os usuários e roles.
+
+USER: Consulta apenas informações.
+
+Produtos:
+
+Gerenciamento completo de produtos para ADMIN.
+
+Consulta de produtos para USER.
+
+JWT:
+
+Token seguro para autenticação.
+
+Clean Architecture:
+
+Modularidade que facilita a manutenção e expansão do projeto.
+
+🔄 Clean Architecture
+
+Este projeto implementa os princípios da Clean Architecture, garantindo uma separação clara de responsabilidades e a possibilidade de futuras integrações com módulos independentes.
+
+Estrutura do Projeto:
+
+Domain: Contém as entidades e regras de negócio.
+
+Application: Contém os casos de uso e interfaces.
+
+Infrastructure: Implementação de gateways, controladores e integrações externas.
+
+Configurações: Gerenciamento de segurança, documentação e exceções.
+
+⛏️ Como Executar
+
+1. Clonar o Repositório
+
 git clone git@github.com:WenderGustavo/product-user-manager.git
 cd product-user-manager
-2. Subir Banco de Dados com Docker
-bash
-Copiar código
+
+2. Subir o Banco de Dados com Docker
+
 docker-compose up -d
+
 Isso inicializará o PostgreSQL na porta 5432.
 
 3. Executar a Aplicação
-bash
-Copiar código
+
 ./mvnw spring-boot:run
+
 4. Acessar a Documentação Swagger
-Abra no navegador:
 
-bash
-Copiar código
+Abra o navegador e acesse:
+
 http://localhost:8080/swagger-ui/index.html
-🔗 Endpoints Principais
-Usuários
-GET /users: Lista todos os usuários.
-POST /users: Cria um novo usuário.
-PUT /users/{id}: Atualiza um usuário.
-DELETE /users/{id}: Remove um usuário.
-Produtos
-GET /products: Lista todos os produtos.
-POST /products: Cria um novo produto.
-PUT /products/{id}: Atualiza um produto.
-DELETE /products/{id}: Remove um produto.
-🧪 Testes Unitários
-Execute os testes unitários com:
 
-bash
-Copiar código
+🔗 Endpoints Principais
+
+Usuários:
+
+GET /users: Lista todos os usuários.
+
+POST /users: Cria um novo usuário.
+
+PUT /users/{id}: Atualiza um usuário.
+
+DELETE /users/{id}: Remove um usuário.
+
+Produtos:
+
+GET /products: Lista todos os produtos.
+
+POST /products: Cria um novo produto.
+
+PUT /products/{id}: Atualiza um produto.
+
+DELETE /products/{id}: Remove um produto.
+
+📊 Testes Unitários
+
+Execute os testes unitários para verificar a integridade do sistema:
+
 ./mvnw test
+
 📂 Estrutura do Projeto
-bash
-Copiar código
+
 src/
 ├── main/
 │   ├── java/
@@ -121,6 +166,10 @@ src/
 │       ├── application.yml
 │       └── db/migration/    # Migrações do Flyway
 ├── test/                    # Testes unitários
-👤 Autor
-Desenvolvido por Wender Gustavo.
-📎 LinkedIn
+
+👨‍💼 Autor
+
+Desenvolvido por Wender Gustavo.Conecte-se comigo no LinkedIn.
+
+Este projeto está licenciado sob a licença MIT.
+
