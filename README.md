@@ -15,7 +15,7 @@ Um sistema backend robusto desenvolvido com Spring Boot e Java 21, utilizando au
 9. [Estrutura do Projeto](#estrutura-do-projeto)
 10. [Autor](#autor)
 
-##Sobre
+## Sobre
 
 Este projeto é um sistema de gerenciamento de usuários e produtos com autenticação e autorização baseadas em roles (ADMIN e USER), utilizando JWT. Foi desenvolvido com foco em escalabilidade, modularidade e segurança.
 
@@ -86,6 +86,7 @@ cd product-user-manager
 ```bash
 docker-compose up -d
 ```
+
 Isso inicializará o PostgreSQL na porta **5432**.
 
 ### 3. Executar a Aplicação
@@ -218,7 +219,7 @@ src/
 ## Autor
 
 Desenvolvido por **Wender Gustavo**.\
-Conecte-se comigo no [LinkedIn]([https://www.linkedin.com/in/wendergustavo/](https://www.linkedin.com/in/wender-gustavo-110343230/)).
+Conecte-se comigo no [LinkedIn](https://www.linkedin.com/in/wender-gustavo-110343230/).
 
 ---
 
