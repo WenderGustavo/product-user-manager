@@ -218,7 +218,7 @@ src/
 ## Autor
 
 Desenvolvido por **Wender Gustavo**.\
-Conecte-se comigo no [LinkedIn](https://www.linkedin.com/in/wendergustavo/).
+Conecte-se comigo no [LinkedIn]([https://www.linkedin.com/in/wendergustavo/](https://www.linkedin.com/in/wender-gustavo-110343230/)).
 
 ---
 
