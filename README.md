@@ -17,7 +17,7 @@ Um sistema backend robusto desenvolvido com Spring Boot e Java 21, utilizando au
 
 ## Sobre
 
-Este projeto é um sistema de gerenciamento de usuários e produtos com autenticação e autorização baseadas em roles (ADMIN e USER), utilizando JWT. Foi desenvolvido com foco em escalabilidade, modularidade e segurança.
+Este projeto é um sistema de gerenciamento de usuários e produtos com autenticação e autorização baseadas em roles (ADMIN e USER), utilizando JWT.
 
 ### Principais Características:
 
@@ -51,7 +51,6 @@ Este projeto é um sistema de gerenciamento de usuários e produtos com autentic
 
 - **Usuários:**
   - **ADMIN**: Gerencia todos os usuários e roles.
-  - **USER**: Consulta apenas informações.
 - **Produtos:**
   - Gerenciamento completo de produtos para ADMIN.
   - Consulta de produtos para USER.
