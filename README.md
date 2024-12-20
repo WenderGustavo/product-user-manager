@@ -15,7 +15,7 @@ Um sistema backend robusto desenvolvido com Spring Boot e Java 21, utilizando au
 9. [Estrutura do Projeto](#estrutura-do-projeto)
 10. [Autor](#autor)
 
-## ⚖️ Sobre
+##Sobre
 
 Este projeto é um sistema de gerenciamento de usuários e produtos com autenticação e autorização baseadas em roles (ADMIN e USER), utilizando JWT. Foi desenvolvido com foco em escalabilidade, modularidade e segurança.
 
@@ -36,7 +36,7 @@ Este projeto é um sistema de gerenciamento de usuários e produtos com autentic
 - **Autenticação**: Realizada via JWT, com tokens incluídos no cabeçalho das requisições.
 - **Autorização**: Controle de acessos baseado em roles, gerenciado pelo Spring Security.
 
-## 🚀 Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 - **Java 21**: Versão mais recente do Java, com recursos aprimorados de desempenho e segurança.
 - **Spring Boot**: Framework para desenvolvimento ágil e eficiente.
@@ -47,7 +47,7 @@ Este projeto é um sistema de gerenciamento de usuários e produtos com autentic
 - **JUnit 5**: Framework para testes unitários.
 - **Swagger**: Documentação interativa para APIs REST.
 
-## 🔧 Funcionalidades
+## Funcionalidades
 
 - **Usuários:**
   - **ADMIN**: Gerencia todos os usuários e roles.
@@ -60,7 +60,7 @@ Este projeto é um sistema de gerenciamento de usuários e produtos com autentic
 - **Clean Architecture:**
   - Modularidade que facilita a manutenção e expansão do projeto.
 
-## 🔄 Clean Architecture
+## Clean Architecture
 
 Este projeto implementa os princípios da **Clean Architecture**, garantindo uma separação clara de responsabilidades e a possibilidade de futuras integrações com módulos independentes.
 
@@ -72,7 +72,7 @@ Este projeto implementa os princípios da **Clean Architecture**, garantindo uma
 4. **Exception**: Exceções relacionadas ao sistema.
 5. **Infrastructure**: Implementação de gateways, controladores e integrações externas.
 
-## ⛏️ Como Executar
+## Como Executar
 
 ### 1. Clonar o Repositório
 
@@ -102,7 +102,7 @@ Abra o navegador e acesse:
 http://localhost:8080/swagger-ui/index.html
 ```
 
-## 📖 Guia de Requisições
+## Guia de Requisições
 
 ### 1. Registrar um ADMIN:
 
@@ -174,7 +174,7 @@ Authorization: Bearer <seu-token-aqui>
 }
 ```
 
-## 🔗 Endpoints Principais
+## Endpoints Principais
 
 ### Usuários:
 
@@ -190,7 +190,7 @@ Authorization: Bearer <seu-token-aqui>
 - **PUT /products/{id}**: Atualiza um produto.
 - **DELETE /products/{id}**: Remove um produto.
 
-## 📊 Testes Unitários
+## Testes Unitários
 
 Execute os testes unitários para verificar a integridade do sistema:
 
@@ -198,7 +198,7 @@ Execute os testes unitários para verificar a integridade do sistema:
 ./mvnw test
 ```
 
-## 📂 Estrutura do Projeto
+## Estrutura do Projeto
 
 ```plaintext
 src/
@@ -215,7 +215,7 @@ src/
 ├── test/                    # Testes unitários
 ```
 
-## 👨‍💼 Autor
+## Autor
 
 Desenvolvido por **Wender Gustavo**.\
 Conecte-se comigo no [LinkedIn](https://www.linkedin.com/in/wendergustavo/).
