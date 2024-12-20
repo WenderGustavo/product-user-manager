@@ -9,10 +9,11 @@ Um sistema backend robusto desenvolvido com Spring Boot e Java 21, utilizando au
 3. [Funcionalidades](#funcionalidades)
 4. [Clean Architecture](#clean-architecture)
 5. [Como Executar](#como-executar)
-6. [Endpoints Principais](#endpoints-principais)
-7. [Testes Unitários](#testes-unitarios)
-8. [Estrutura do Projeto](#estrutura-do-projeto)
-9. [Autor](#autor)
+6. [Guia de Requisições](#guia-de-requisicoes)
+7. [Endpoints Principais](#endpoints-principais)
+8. [Testes Unitários](#testes-unitários)
+9. [Estrutura do Projeto](#estrutura-do-projeto)
+10. [Autor](#autor)
 
 ## ⚖️ Sobre
 
@@ -71,9 +72,9 @@ Este projeto implementa os princípios da **Clean Architecture**, garantindo uma
 4. **Exception**: Exceções relacionadas ao sistema.
 5. **Infrastructure**: Implementação de gateways, controladores e integrações externas.
 
-## ***⛏️ Como Executar***
+## ⛏️ Como Executar
 
-### ***1. Clonar o Repositório***
+### 1. Clonar o Repositório
 
 ```bash
 git clone git@github.com:WenderGustavo/product-user-manager.git
@@ -85,7 +86,6 @@ cd product-user-manager
 ```bash
 docker-compose up -d
 ```
-
 Isso inicializará o PostgreSQL na porta **5432**.
 
 ### 3. Executar a Aplicação
@@ -100,6 +100,78 @@ Abra o navegador e acesse:
 
 ```
 http://localhost:8080/swagger-ui/index.html
+```
+
+## 📖 Guia de Requisições
+
+### 1. Registrar um ADMIN:
+
+Faça uma requisição POST para o endpoint `/auth/register` com o seguinte payload:
+
+```json
+{
+  "username": "admin",
+  "password": "admin123",
+  "email": "admin@example.com",
+  "role": "ADMIN"
+}
+```
+
+### 2. Fazer login:
+
+Após registrar, faça uma requisição POST para o endpoint `/auth/login`:
+
+```json
+{
+  "username": "admin",
+  "password": "admin123"
+}
+```
+
+No retorno, você receberá um token JWT no formato:
+
+```json
+{
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9..."
+}
+```
+
+### 3. Configurar o token:
+
+Adicione o token JWT no cabeçalho `Authorization` das requisições subsequentes:
+
+```
+Authorization: Bearer <seu-token-aqui>
+```
+
+### 4. Acessar as rotas de Usuários e Produtos:
+
+#### Exemplo de rota para criar um produto (ADMIN):
+
+- Endpoint: **POST /products**
+
+```json
+{
+  "name": "Produto Teste",
+  "price": 100.0
+}
+```
+
+#### Exemplo de rota para listar produtos (ADMIN ou USER):
+
+- Endpoint: **GET /products**
+
+#### Exemplo de rota para criar outro usuário (ADMIN):
+
+- Endpoint: **POST /users**
+
+```json
+{
+  "username": "user1",
+  "password": "password123",
+  "email": "user1@example.com",
+  "role": "USER"
+}
 ```
 
 ## 🔗 Endpoints Principais
