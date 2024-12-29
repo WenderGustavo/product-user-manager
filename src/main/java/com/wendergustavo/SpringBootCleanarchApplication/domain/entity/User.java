@@ -41,7 +41,7 @@ public record User(Long id, String login, String password, UserRoles role) {
     }
 
     private void validatePassword(String password) {
-        if (password == null || password.isBlank() || password.length() < 8) {
+        if (password == null || password.isBlank()) {
             throw new InvalidArgumentDomainException(SENHA_INVALIDA);
         }
     }
