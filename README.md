@@ -82,7 +82,7 @@ cd product-user-manager
 
 ### 2. Configurar as Variáveis de Ambiente
 
-Crie uma cópia do arquivo `.env.example` e renomeie para `.env`:
+Segundo, faça uma copia do arquivo env:
 
 ```bash
 cp .env.example .env
