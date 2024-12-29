@@ -80,7 +80,30 @@ git clone git@github.com:WenderGustavo/product-user-manager.git
 cd product-user-manager
 ```
 
-### 2. Subir o Banco de Dados com Docker
+### 2. Configurar as Variáveis de Ambiente
+
+Crie um arquivo `.env` na raiz do projeto com as seguintes variáveis de ambiente:
+
+```env
+# Banco de Dados
+DB_HOST=localhost
+DB_PORT=5432
+DB_NAME=product_user_manager
+DB_USERNAME=postgres
+DB_PASSWORD=postgres
+
+# JWT
+JWT_SECRET=secrettoken
+JWT_EXPIRATION=86400
+
+# Spring Boot
+SERVER_PORT=8080
+
+# Docker
+DOCKER_NETWORK=product_user_manager_network
+```
+
+### 3. Subir o Banco de Dados com Docker
 
 ```bash
 docker-compose up -d
@@ -88,13 +111,13 @@ docker-compose up -d
 
 Isso inicializará o PostgreSQL na porta **5432**.
 
-### 3. Executar a Aplicação
+### 4. Executar a Aplicação
 
 ```bash
 ./mvnw spring-boot:run
 ```
 
-### 4. Acessar a Documentação Swagger
+### 5. Acessar a Documentação Swagger
 
 Abra o navegador e acesse:
 
