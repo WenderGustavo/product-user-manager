@@ -80,9 +80,9 @@ git clone git@github.com:WenderGustavo/product-user-manager.git
 cd product-user-manager
 ```
 
-### 2. Configurar as Variáveis de Ambiente
+### 2. faça uma copia do arquivo env:
 
-Segundo, faça uma copia do arquivo env:
+
 
 ```bash
 cp .env.example .env
