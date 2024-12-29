@@ -82,7 +82,13 @@ cd product-user-manager
 
 ### 2. Configurar as Variáveis de Ambiente
 
-Crie um arquivo `.env` na raiz do projeto com as seguintes variáveis de ambiente:
+Crie uma cópia do arquivo `.env.example` e renomeie para `.env`:
+
+```bash
+cp .env.example .env
+```
+
+Edite o arquivo `.env` com as seguintes variáveis de ambiente:
 
 ```env
 # Banco de Dados
