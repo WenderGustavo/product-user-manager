@@ -88,27 +88,6 @@ Crie uma cópia do arquivo `.env.example` e renomeie para `.env`:
 cp .env.example .env
 ```
 
-Edite o arquivo `.env` com as seguintes variáveis de ambiente:
-
-```env
-# Banco de Dados
-DB_HOST=localhost
-DB_PORT=5432
-DB_NAME=product_user_manager
-DB_USERNAME=postgres
-DB_PASSWORD=postgres
-
-# JWT
-JWT_SECRET=secrettoken
-JWT_EXPIRATION=86400
-
-# Spring Boot
-SERVER_PORT=8080
-
-# Docker
-DOCKER_NETWORK=product_user_manager_network
-```
-
 ### 3. Subir o Banco de Dados com Docker
 
 ```bash
