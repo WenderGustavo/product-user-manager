@@ -1,8 +1,8 @@
-package com.wendergustavo.SpringBootCleanarchApplication.infrastructure.controllers.user.controllers;
+package com.wendergustavo.SpringBootCleanarchApplication.infrastructure.controllers.user.controller;
 
 import com.wendergustavo.SpringBootCleanarchApplication.application.usecases.UserRegistrationService;
 import com.wendergustavo.SpringBootCleanarchApplication.infrastructure.controllers.user.DTO.*;
-import com.wendergustavo.SpringBootCleanarchApplication.infrastructure.repository.user.UserRoles;
+import com.wendergustavo.SpringBootCleanarchApplication.infrastructure.repositories.user.UserRoles;
 import com.wendergustavo.SpringBootCleanarchApplication.infrastructure.security.TokenService;
 import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;

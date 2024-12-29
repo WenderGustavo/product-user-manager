@@ -1,4 +1,4 @@
-package com.wendergustavo.SpringBootCleanarchApplication.infrastructure.repository.user;
+package com.wendergustavo.SpringBootCleanarchApplication.infrastructure.repositories.user;
 
 public enum UserRoles {
     ADMIN,

@@ -7,7 +7,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 @SpringBootApplication(scanBasePackages = {
 		"com.wendergustavo.SpringBootCleanarchApplication"
 })
-@EnableJpaRepositories(basePackages = "com.wendergustavo.SpringBootCleanarchApplication.infrastructure.repository")
+@EnableJpaRepositories(basePackages = "com.wendergustavo.SpringBootCleanarchApplication.infrastructure.repositories")
 
 public class SpringBootCleanarchApplication {
 	public static void main(String[] args) {

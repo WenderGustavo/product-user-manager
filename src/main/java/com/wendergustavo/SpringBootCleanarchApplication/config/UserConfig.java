@@ -6,7 +6,7 @@ import com.wendergustavo.SpringBootCleanarchApplication.application.usecases.Use
 import com.wendergustavo.SpringBootCleanarchApplication.infrastructure.controllers.user.DTO.UserDTOMapper;
 import com.wendergustavo.SpringBootCleanarchApplication.infrastructure.gateways.mapper.UserEntityMapper;
 import com.wendergustavo.SpringBootCleanarchApplication.infrastructure.gateways.impl.UserRepositoryGateway;
-import com.wendergustavo.SpringBootCleanarchApplication.infrastructure.repository.user.UserRepository;
+import com.wendergustavo.SpringBootCleanarchApplication.infrastructure.repositories.user.UserRepository;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -22,6 +22,7 @@ public class UserConfig {
     UserGateway userGateway(UserRepository userRepository, UserEntityMapper userEntityMapper) {
         return new UserRepositoryGateway(userRepository, userEntityMapper);
     }
+
 
     @Bean
     UserEntityMapper userEntityMapper() {

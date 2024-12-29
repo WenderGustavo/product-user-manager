@@ -3,16 +3,16 @@ package com.wendergustavo.SpringBootCleanarchApplication.infrastructure.gateways
 import com.wendergustavo.SpringBootCleanarchApplication.application.interfaces.UserGateway;
 import com.wendergustavo.SpringBootCleanarchApplication.domain.entity.User;
 import com.wendergustavo.SpringBootCleanarchApplication.infrastructure.gateways.mapper.UserEntityMapper;
-import com.wendergustavo.SpringBootCleanarchApplication.infrastructure.repository.user.UserEntity;
-import com.wendergustavo.SpringBootCleanarchApplication.infrastructure.repository.user.UserRepository;
-import org.springframework.stereotype.Repository;
+import com.wendergustavo.SpringBootCleanarchApplication.infrastructure.repositories.user.UserEntity;
+import com.wendergustavo.SpringBootCleanarchApplication.infrastructure.repositories.user.UserRepository;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 import java.util.stream.StreamSupport;
 
-@Repository
+@Component
 public class UserRepositoryGateway implements UserGateway {
 
     private final UserEntityMapper userEntityMapper;

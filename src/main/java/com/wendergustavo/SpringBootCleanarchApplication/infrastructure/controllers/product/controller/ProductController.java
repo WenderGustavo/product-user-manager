@@ -1,4 +1,4 @@
-package com.wendergustavo.SpringBootCleanarchApplication.infrastructure.controllers.product.controllers;
+package com.wendergustavo.SpringBootCleanarchApplication.infrastructure.controllers.product.controller;
 
 import com.wendergustavo.SpringBootCleanarchApplication.application.productcase.ProductInteractor;
 import com.wendergustavo.SpringBootCleanarchApplication.domain.entity.Product;

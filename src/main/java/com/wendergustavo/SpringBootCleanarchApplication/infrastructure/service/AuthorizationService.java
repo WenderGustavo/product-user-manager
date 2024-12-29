@@ -1,7 +1,7 @@
 package com.wendergustavo.SpringBootCleanarchApplication.infrastructure.service;
 
-import com.wendergustavo.SpringBootCleanarchApplication.infrastructure.repository.user.UserEntity;
-import com.wendergustavo.SpringBootCleanarchApplication.infrastructure.repository.user.UserRepository;
+import com.wendergustavo.SpringBootCleanarchApplication.infrastructure.repositories.user.UserEntity;
+import com.wendergustavo.SpringBootCleanarchApplication.infrastructure.repositories.user.UserRepository;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;

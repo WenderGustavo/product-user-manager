@@ -3,10 +3,10 @@ package com.wendergustavo.SpringBootCleanarchApplication.infrastructure.controll
 import com.wendergustavo.SpringBootCleanarchApplication.application.usecases.UserInteractor;
 import com.wendergustavo.SpringBootCleanarchApplication.domain.entity.User;
 import com.wendergustavo.SpringBootCleanarchApplication.infrastructure.controllers.user.DTO.UserDTOMapper;
-import com.wendergustavo.SpringBootCleanarchApplication.infrastructure.controllers.user.controllers.CreateUserRequest;
-import com.wendergustavo.SpringBootCleanarchApplication.infrastructure.controllers.user.controllers.CreateUserResponse;
-import com.wendergustavo.SpringBootCleanarchApplication.infrastructure.controllers.user.controllers.UserController;
-import com.wendergustavo.SpringBootCleanarchApplication.infrastructure.repository.user.UserRoles;
+import com.wendergustavo.SpringBootCleanarchApplication.infrastructure.controllers.user.controller.CreateUserRequest;
+import com.wendergustavo.SpringBootCleanarchApplication.infrastructure.controllers.user.controller.CreateUserResponse;
+import com.wendergustavo.SpringBootCleanarchApplication.infrastructure.controllers.user.controller.UserController;
+import com.wendergustavo.SpringBootCleanarchApplication.infrastructure.repositories.user.UserRoles;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;

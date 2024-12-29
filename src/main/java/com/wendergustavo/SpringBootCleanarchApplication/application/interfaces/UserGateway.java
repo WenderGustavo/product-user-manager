@@ -6,6 +6,7 @@ import com.wendergustavo.SpringBootCleanarchApplication.domain.entity.User;
 import java.util.List;
 import java.util.Optional;
 
+
 public interface UserGateway {
     User createUser(User user);
     boolean deleteUser(long id);

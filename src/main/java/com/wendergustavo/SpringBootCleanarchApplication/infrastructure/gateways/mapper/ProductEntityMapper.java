@@ -1,7 +1,7 @@
     package com.wendergustavo.SpringBootCleanarchApplication.infrastructure.gateways.mapper;
 
     import com.wendergustavo.SpringBootCleanarchApplication.domain.entity.Product;
-    import com.wendergustavo.SpringBootCleanarchApplication.infrastructure.repository.product.ProductEntity;
+    import com.wendergustavo.SpringBootCleanarchApplication.infrastructure.repositories.product.ProductEntity;
 
     public class ProductEntityMapper {
 

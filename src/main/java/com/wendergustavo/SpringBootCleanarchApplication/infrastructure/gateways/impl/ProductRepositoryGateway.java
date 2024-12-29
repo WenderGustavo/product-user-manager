@@ -3,8 +3,8 @@ package com.wendergustavo.SpringBootCleanarchApplication.infrastructure.gateways
 import com.wendergustavo.SpringBootCleanarchApplication.application.interfaces.ProductGateway;
 import com.wendergustavo.SpringBootCleanarchApplication.domain.entity.Product;
 import com.wendergustavo.SpringBootCleanarchApplication.infrastructure.gateways.mapper.ProductEntityMapper;
-import com.wendergustavo.SpringBootCleanarchApplication.infrastructure.repository.product.ProductEntity;
-import com.wendergustavo.SpringBootCleanarchApplication.infrastructure.repository.product.ProductRepository;
+import com.wendergustavo.SpringBootCleanarchApplication.infrastructure.repositories.product.ProductEntity;
+import com.wendergustavo.SpringBootCleanarchApplication.infrastructure.repositories.product.ProductRepository;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;

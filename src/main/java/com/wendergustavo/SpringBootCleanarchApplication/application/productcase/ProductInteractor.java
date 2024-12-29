@@ -1,4 +1,4 @@
-package com.wendergustavo.SpringBootCleanarchApplication.application.usecases;
+package com.wendergustavo.SpringBootCleanarchApplication.application.productcase;
 
 import com.wendergustavo.SpringBootCleanarchApplication.exceptions.ProductNotFoundException;
 import com.wendergustavo.SpringBootCleanarchApplication.application.interfaces.ProductGateway;

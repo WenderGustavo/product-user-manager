@@ -1,7 +1,7 @@
 package com.wendergustavo.SpringBootCleanarchApplication.domain.entity;
 
 import com.wendergustavo.SpringBootCleanarchApplication.exceptions.InvalidArgumentDomainException;
-import com.wendergustavo.SpringBootCleanarchApplication.infrastructure.repository.user.UserRoles;
+import com.wendergustavo.SpringBootCleanarchApplication.infrastructure.repositories.user.UserRoles;
 
 public record User(Long id, String login, String password, UserRoles role) {
 

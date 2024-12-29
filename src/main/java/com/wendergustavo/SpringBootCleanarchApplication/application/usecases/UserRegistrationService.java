@@ -3,7 +3,7 @@ package com.wendergustavo.SpringBootCleanarchApplication.application.usecases;
 import com.wendergustavo.SpringBootCleanarchApplication.application.interfaces.UserGateway;
 import com.wendergustavo.SpringBootCleanarchApplication.application.interfaces.PasswordEncoderGateway;
 import com.wendergustavo.SpringBootCleanarchApplication.domain.entity.User;
-import com.wendergustavo.SpringBootCleanarchApplication.infrastructure.repository.user.UserRoles;
+import com.wendergustavo.SpringBootCleanarchApplication.infrastructure.repositories.user.UserRoles;
 import com.wendergustavo.SpringBootCleanarchApplication.exceptions.InvalidUserFieldException;
 import com.wendergustavo.SpringBootCleanarchApplication.exceptions.InvalidUserRoleException;
 import com.wendergustavo.SpringBootCleanarchApplication.exceptions.LoginAlreadyExistsException;
