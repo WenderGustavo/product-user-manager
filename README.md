@@ -82,8 +82,6 @@ cd product-user-manager
 
 ### 2. faça uma copia do arquivo env:
 
-
-
 ```bash
 cp .env.example .env
 ```
@@ -94,12 +92,12 @@ POSTGRES_DB=meu_banco
 POSTGRES_USER=postgres
 POSTGRES_PASSWORD=postgres
 
- Variáveis para a aplicação Spring Boot
+ #Variáveis para a aplicação Spring Boot
 SPRING_DATASOURCE_URL=jdbc:postgresql://postgres:5432/${POSTGRES_DB}
 SPRING_DATASOURCE_USERNAME=${POSTGRES_USER}
 SPRING_DATASOURCE_PASSWORD=${POSTGRES_PASSWORD}
 
-Chave secreta para JWT
+#Chave secreta para JWT
 JWT_SECRET=my-super-secret-key
 
 ```
