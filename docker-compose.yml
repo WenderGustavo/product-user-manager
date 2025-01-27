@@ -1,3 +1,5 @@
+version: '3.8'
+
 services:
   postgres:
     image: postgres:latest
@@ -12,7 +14,9 @@ services:
       - postgres_data:/var/lib/postgresql/data
 
   app:
-    build: .
+    build:
+      context: .
+      dockerfile: Dockerfile
     container_name: springboot_cleanarch_app
     environment:
       SPRING_DATASOURCE_URL: ${SPRING_DATASOURCE_URL}
@@ -25,7 +29,6 @@ services:
       - postgres
     volumes:
       - ./src:/app/src
-      - ./static:/app/static
-
+      - ./static:/app/static                 
 volumes:
   postgres_data:
