@@ -87,14 +87,33 @@ cd product-user-manager
 ```bash
 cp .env.example .env
 ```
+Subir o Banco de Dados com Docker
+Primeiro, crie um arquivo .env a partir do exemplo fornecido:
+
+Exemplo de arquivo .env.example
+bash
+Copiar
+Editar
+# Variáveis de configuração do PostgreSQL
+POSTGRES_DB=meu_banco
+POSTGRES_USER=postgres
+POSTGRES_PASSWORD=postgres
+
+# Variáveis para a aplicação Spring Boot
+SPRING_DATASOURCE_URL=jdbc:postgresql://postgres:5432/${POSTGRES_DB}
+SPRING_DATASOURCE_USERNAME=${POSTGRES_USER}
+SPRING_DATASOURCE_PASSWORD=${POSTGRES_PASSWORD}
+
+# Chave secreta para JWT
+JWT_SECRET=my-super-secret-key
+
+Isso inicializará o PostgreSQL na porta **5432**.
 
 ### 3. Subir o Banco de Dados com Docker
 
 ```bash
 docker-compose up -d
 ```
-
-Isso inicializará o PostgreSQL na porta **5432**.
 
 ### 4. Executar a Aplicação
 
