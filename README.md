@@ -1,4 +1,4 @@
-# Product and User Manager
+# Gerenciamento de Produtos e Usuários com Autenticação JWT e Clean Architecture
 
 Um sistema backend robusto desenvolvido com Spring Boot e Java 21, utilizando autenticação e autorização com Spring Security. Inclui conteinerização com Docker, banco de dados PostgreSQL gerenciado por Flyway e uma abordagem de arquitetura modular seguindo os princípios da Clean Architecture.
 
