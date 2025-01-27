@@ -87,13 +87,9 @@ cd product-user-manager
 ```bash
 cp .env.example .env
 ```
-Subir o Banco de Dados com Docker
-Primeiro, crie um arquivo .env a partir do exemplo fornecido:
+Atualize as variáveis de ambiente do arquivo .env
 
-Exemplo de arquivo .env.example
-
-#Variáveis de configuração do PostgreSQL
-
+```dosini
 POSTGRES_DB=meu_banco
 POSTGRES_USER=postgres
 POSTGRES_PASSWORD=postgres
@@ -106,6 +102,7 @@ SPRING_DATASOURCE_PASSWORD=${POSTGRES_PASSWORD}
 Chave secreta para JWT
 JWT_SECRET=my-super-secret-key
 
+```
 Isso inicializará o PostgreSQL na porta **5432**.
 
 ### 3. Subir o Banco de Dados com Docker
