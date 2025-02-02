@@ -103,7 +103,9 @@ JWT_SECRET=my-super-secret-key
 ```
 Isso inicializará o PostgreSQL na porta **5432**.
 
-### 3. Subir o Banco de Dados com Docker
+### 3. Instalar Docker
+
+Executar o comando para subir o container.
 
 ```bash
 docker-compose up -d
